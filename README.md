@@ -3,3 +3,4 @@
 ## Members
 
 ### Rachael Simmonds
+### Alexis Rivaldo
