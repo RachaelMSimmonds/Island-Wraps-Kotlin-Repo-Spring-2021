@@ -10,7 +10,6 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.simmonds.rachael.islandwrapsapp.HomeFragment"
-        android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
             android:id="@+id/action_homeFragment_to_menuFragment"
@@ -29,7 +28,6 @@
     <fragment
         android:id="@+id/menuFragment"
         android:name="com.simmonds.rachael.islandwrapsapp.MenuFragment"
-        android:label="fragment_menu"
         tools:layout="@layout/fragment_menu" >
         <action
             android:id="@+id/action_menuFragment_to_homeFragment"
@@ -48,7 +46,6 @@
     <fragment
         android:id="@+id/eventsFragment"
         android:name="com.simmonds.rachael.islandwrapsapp.EventsFragment"
-        android:label="fragment_events"
         tools:layout="@layout/fragment_events" >
         <action
             android:id="@+id/action_eventsFragment_self"
@@ -67,7 +64,6 @@
     <fragment
         android:id="@+id/contactFragment"
         android:name="com.simmonds.rachael.islandwrapsapp.ContactFragment"
-        android:label="fragment_contact"
         tools:layout="@layout/fragment_contact" >
         <action
             android:id="@+id/action_contactFragment_to_eventsFragment"

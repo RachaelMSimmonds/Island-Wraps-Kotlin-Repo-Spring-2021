@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/destination_home"
+        android:id="@+id/homeFragment"
         android:icon="@drawable/ic_home"
-        android:title="Home"/>
+        android:title="@string/home"/>
     <item
-        android:id="@+id/destination_menu"
+        android:id="@+id/menuFragment"
         android:icon="@drawable/ic_menu"
-        android:title="Camera"/>
+        android:title="@string/menu"/>
     <item
-        android:id="@+id/destination_events"
+        android:id="@+id/eventsFragment"
         android:icon="@drawable/ic_events"
-        android:title="Camera"/>
+        android:title="@string/events"/>
     <item
-        android:id="@+id/destination_contact"
+        android:id="@+id/contactFragment"
         android:icon="@drawable/ic_contact"
-        android:title="Camera"/>
+        android:title="@string/contact"/>
 
 
 </menu>
