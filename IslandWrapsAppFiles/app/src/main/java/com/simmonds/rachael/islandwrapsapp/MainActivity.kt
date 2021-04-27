@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-       // setSupportActionBar(binding.toolbar)
+        setSupportActionBar(binding.toolbar)
         val navController = Navigation.findNavController(this, R.id.nav_host_fragment)
 
         setupBottomNavMenu(navController)
@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onSupportNavigateUp(): Boolean {
         return NavigationUI.navigateUp(
-            Navigation.findNavController(this, R.id.nav_host_fragment), binding.drawerLayout) // so the hamburger/back work correctly
+                Navigation.findNavController(this, R.id.nav_host_fragment), binding.drawerLayout) // so the hamburger/back work correctly
     }
 
 }
