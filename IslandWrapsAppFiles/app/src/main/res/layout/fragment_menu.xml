@@ -66,70 +66,70 @@
             <LinearLayout
                 android:id="@+id/linearLayout"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView9"
+                    android:id="@+id/wraps"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:text="Wraps"
+                    android:text="@string/wraps"
                     android:textSize="24sp" />
 
                 <TextView
-                    android:id="@+id/textView7"
+                    android:id="@+id/plates"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:text="Rubbish Plates"
+                    android:text="@string/rubbish_plates"
                     android:textSize="24sp" />
 
                 <TextView
-                    android:id="@+id/textView14"
+                    android:id="@+id/salads"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:text="Salads"
+                    android:text="@string/salads"
                     android:textSize="24sp" />
 
                 <TextView
-                    android:id="@+id/textView15"
+                    android:id="@+id/dinner"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:text="Dinners"
+                    android:text="@string/dinners"
                     android:textSize="24sp" />
 
                 <TextView
-                    android:id="@+id/textView16"
+                    android:id="@+id/specials"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:text="Specials"
+                    android:text="@string/specials"
                     android:textSize="24sp" />
 
                 <TextView
-                    android:id="@+id/textView17"
+                    android:id="@+id/sides"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:text="Sides"
+                    android:text="@string/sides"
                     android:textSize="24sp" />
 
                 <TextView
-                    android:id="@+id/textView18"
+                    android:id="@+id/bevs"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:text="Beverages"
+                    android:text="@string/beverages"
                     android:textSize="24sp" />
             </LinearLayout>
         </ScrollView>
