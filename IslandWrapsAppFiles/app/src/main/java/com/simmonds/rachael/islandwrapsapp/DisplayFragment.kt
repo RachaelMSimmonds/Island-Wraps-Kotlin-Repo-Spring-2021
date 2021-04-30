@@ -1,11 +1,11 @@
-package edu.rit.fragmentsfinalexample
+package com.simmonds.rachael.islandwrapsapp
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import edu.rit.fragmentsfinalexample.databinding.FragmentDisplayBinding
+import com.simmonds.rachael.islandwrapsapp.databinding.FragmentDisplayBinding
 
 class DisplayFragment : Fragment() {
     private var _binding: FragmentDisplayBinding? = null
@@ -23,9 +23,9 @@ class DisplayFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        binding.characterImage.setImageResource(arguments!!.getInt(ARG_IMAGE_ID))
+        binding.itemImage.setImageResource(requireArguments().getInt(ARG_IMAGE_ID))
         //set bundle when we create frag
-        binding.characterName.text = arguments!!.getString(ARG_TEXT_ID)
+        binding.itemName.text = requireArguments().getString(ARG_TEXT_ID)
     }
 
     companion object {

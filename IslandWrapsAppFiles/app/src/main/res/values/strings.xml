@@ -23,5 +23,12 @@
     <string name="twitter">Twitter</string>
     <string name="instagram">Instagram</string>
     <string name="facebook">Facebook</string>
+    <string name="wraps">Wraps</string>
+    <string name="beverages">Beverages</string>
+    <string name="sides">Sides</string>
+    <string name="specials">Specials</string>
+    <string name="dinners">Dinners</string>
+    <string name="salads">Salads</string>
+    <string name="rubbish_plates">Rubbish Plates</string>
 
 </resources>

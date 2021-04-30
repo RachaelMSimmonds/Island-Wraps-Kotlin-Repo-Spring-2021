@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.ui.NavigationUI
@@ -61,6 +62,45 @@ class MainActivity : AppCompatActivity() {
     override fun onSupportNavigateUp(): Boolean {
         return NavigationUI.navigateUp(
                 Navigation.findNavController(this, R.id.nav_host_fragment), binding.drawerLayout) // so the hamburger/back work correctly
+    }
+
+    //function to show specific menu items
+    fun showMenuItems(view: View) {
+        val fragment = DisplayFragment()
+        val args = Bundle()
+        when(view.id) {
+            R.id.wraps -> {
+                args.putInt(DisplayFragment.ARG_IMAGE_ID,R.drawable.wraps)
+                args.putString(DisplayFragment.ARG_TEXT_ID, "Jerk Chicken, Barbecue Chicken, Grilled Chicken, Curry Chicken, Veggie")
+            }
+            R.id.plates -> {
+                args.putInt(DisplayFragment.ARG_IMAGE_ID,R.drawable.rubbish)
+                args.putString(DisplayFragment.ARG_TEXT_ID, "Jerk Chicken, Barbecue Chicken, Grilled Chicken, Curry Chicken, Veggie")
+            }
+            R.id.salads -> {
+                args.putInt(DisplayFragment.ARG_IMAGE_ID,R.drawable.salads)
+                args.putString(DisplayFragment.ARG_TEXT_ID, "Jerk Chicken, Barbecue Chicken, Grilled Chicken, Curry Chicken, Veggie")
+            }
+            R.id.dinner -> {
+                args.putInt(DisplayFragment.ARG_IMAGE_ID,R.drawable.dinner)
+                args.putString(DisplayFragment.ARG_TEXT_ID, "Jerk Chicken, Oxtail, Curry Goat, Fried Fish, Vegan")
+            }
+            R.id.specials -> {
+                args.putInt(DisplayFragment.ARG_IMAGE_ID,R.drawable.special)
+                args.putString(DisplayFragment.ARG_TEXT_ID, "1, 2, 3, 4, 5")
+            }
+            R.id.sides -> {
+                args.putInt(DisplayFragment.ARG_IMAGE_ID,R.drawable.side)
+                args.putString(DisplayFragment.ARG_TEXT_ID, "Fried Plantains, Fried Dumplings, Festivals, Garden Salad, Soup")
+            }
+            R.id.bevs -> {
+                args.putInt(DisplayFragment.ARG_IMAGE_ID,R.drawable.drink)
+                args.putString(DisplayFragment.ARG_TEXT_ID, "Orange Lemonade, Strawberry Lemonade, Hibiscus Sorrel, Carrot Juice, Ginger Beer")
+            }
+
+        }//when
+        fragment.arguments = args
+        supportFragmentManager.beginTransaction().replace(R.id.content,fragment).commit()
     }
 
 }
