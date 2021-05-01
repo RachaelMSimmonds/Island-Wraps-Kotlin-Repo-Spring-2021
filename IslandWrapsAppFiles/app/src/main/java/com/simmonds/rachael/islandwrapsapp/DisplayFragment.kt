@@ -17,7 +17,9 @@ class WrapFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         //binding
+
         _binding = FragmentWrapBinding.inflate(inflater, container, false)
+
         //return binding.root
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_wrap, container, false)
