@@ -17,7 +17,7 @@ class DisplayFragment : Fragment() {
     ): View? {
         //binding
         _binding = FragmentDisplayBinding.inflate(inflater, container, false)
-        return binding.root
+        //return binding.root
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_display, container, false)
     }
