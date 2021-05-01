@@ -5,6 +5,8 @@
 
     <!-- Home Page Strings -->
     <string name="home">Home</string>
+    <string name="welcome_message">Welcome! We do meal planning, festivals, and all kinds of parties including weddings, birthdays and more!</string>
+    <string name="content">Tent</string>
 
     <!-- Menu Page Strings -->
     <string name="menu">Menu</string>
@@ -33,5 +35,7 @@
 
     <!-- Display Fragment -->
     <string name="itemImage">itemImage</string>
+
+
 
 </resources>
