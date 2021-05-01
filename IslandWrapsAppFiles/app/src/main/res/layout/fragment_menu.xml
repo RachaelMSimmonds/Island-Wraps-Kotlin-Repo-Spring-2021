@@ -10,17 +10,17 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="158dp"
-        android:layout_height="142dp"
-        android:layout_marginStart="4dp"
-        android:contentDescription="@string/logo"
-        android:src="@drawable/water_mark"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.275" />
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="158dp"
+            android:layout_height="142dp"
+            android:layout_marginStart="4dp"
+            android:contentDescription="@string/logo"
+            android:src="@drawable/water_mark"
+            app:layout_constraintBottom_toTopOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.275" />
 
         <TextView
             android:id="@+id/textView13"
@@ -74,6 +74,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
+                    android:onClick="showMenuItems"
                     android:padding="5dp"
                     android:text="@string/wraps"
                     android:textSize="24sp" />
@@ -83,6 +84,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
+                    android:onClick="showMenuItems"
                     android:padding="5dp"
                     android:text="@string/rubbish_plates"
                     android:textSize="24sp" />
@@ -92,6 +94,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
+                    android:onClick="showMenuItems"
                     android:padding="5dp"
                     android:text="@string/salads"
                     android:textSize="24sp" />
@@ -101,6 +104,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
+                    android:onClick="showMenuItems"
                     android:padding="5dp"
                     android:text="@string/dinners"
                     android:textSize="24sp" />
@@ -110,6 +114,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
+                    android:onClick="showMenuItems"
                     android:padding="5dp"
                     android:text="@string/specials"
                     android:textSize="24sp" />
@@ -119,6 +124,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
+                    android:onClick="showMenuItems"
                     android:padding="5dp"
                     android:text="@string/sides"
                     android:textSize="24sp" />
@@ -128,6 +134,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
+                    android:onClick="showMenuItems"
                     android:padding="5dp"
                     android:text="@string/beverages"
                     android:textSize="24sp" />
