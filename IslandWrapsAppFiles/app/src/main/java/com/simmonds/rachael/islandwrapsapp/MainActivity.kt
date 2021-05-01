@@ -66,36 +66,36 @@ class MainActivity : AppCompatActivity() {
 
     //function to show specific menu items
     fun showMenuItems(view: View) {
-        val fragment = DisplayFragment()
+        val fragment = WrapFragment()
         val args = Bundle()
         when(view.id) {
             R.id.wraps -> {
-                args.putInt(DisplayFragment.ARG_IMAGE_ID,R.drawable.wraps)
-                args.putString(DisplayFragment.ARG_TEXT_ID, "Jerk Chicken, Barbecue Chicken, Grilled Chicken, Curry Chicken, Veggie")
+                args.putInt(WrapFragment.ARG_IMAGE_ID,R.drawable.wraps)
+                args.putString(WrapFragment.ARG_TEXT_ID, "Jerk Chicken, Barbecue Chicken, Grilled Chicken, Curry Chicken, Veggie")
             }
             R.id.plates -> {
-                args.putInt(DisplayFragment.ARG_IMAGE_ID,R.drawable.rubbish)
-                args.putString(DisplayFragment.ARG_TEXT_ID, "Jerk Chicken, Barbecue Chicken, Grilled Chicken, Curry Chicken, Veggie")
+                args.putInt(WrapFragment.ARG_IMAGE_ID,R.drawable.rubbish)
+                args.putString(WrapFragment.ARG_TEXT_ID, "Jerk Chicken, Barbecue Chicken, Grilled Chicken, Curry Chicken, Veggie")
             }
             R.id.salads -> {
-                args.putInt(DisplayFragment.ARG_IMAGE_ID,R.drawable.salads)
-                args.putString(DisplayFragment.ARG_TEXT_ID, "Jerk Chicken, Barbecue Chicken, Grilled Chicken, Curry Chicken, Veggie")
+                args.putInt(WrapFragment.ARG_IMAGE_ID,R.drawable.salads)
+                args.putString(WrapFragment.ARG_TEXT_ID, "Jerk Chicken, Barbecue Chicken, Grilled Chicken, Curry Chicken, Veggie")
             }
             R.id.dinner -> {
-                args.putInt(DisplayFragment.ARG_IMAGE_ID,R.drawable.dinner)
-                args.putString(DisplayFragment.ARG_TEXT_ID, "Jerk Chicken, Oxtail, Curry Goat, Fried Fish, Vegan")
+                args.putInt(WrapFragment.ARG_IMAGE_ID,R.drawable.dinner)
+                args.putString(WrapFragment.ARG_TEXT_ID, "Jerk Chicken, Oxtail, Curry Goat, Fried Fish, Vegan")
             }
             R.id.specials -> {
-                args.putInt(DisplayFragment.ARG_IMAGE_ID,R.drawable.special)
-                args.putString(DisplayFragment.ARG_TEXT_ID, "1, 2, 3, 4, 5")
+                args.putInt(WrapFragment.ARG_IMAGE_ID,R.drawable.special)
+                args.putString(WrapFragment.ARG_TEXT_ID, "Special 1, Special 2, Special 3, Special 4, Special 5")
             }
             R.id.sides -> {
-                args.putInt(DisplayFragment.ARG_IMAGE_ID,R.drawable.side)
-                args.putString(DisplayFragment.ARG_TEXT_ID, "Fried Plantains, Fried Dumplings, Festivals, Garden Salad, Soup")
+                args.putInt(WrapFragment.ARG_IMAGE_ID,R.drawable.side)
+                args.putString(WrapFragment.ARG_TEXT_ID, "Fried Plantains, Fried Dumplings, Festivals, Garden Salad, Soup")
             }
             R.id.bevs -> {
-                args.putInt(DisplayFragment.ARG_IMAGE_ID,R.drawable.drink)
-                args.putString(DisplayFragment.ARG_TEXT_ID, "Orange Lemonade, Strawberry Lemonade, Hibiscus Sorrel, Carrot Juice, Ginger Beer")
+                args.putInt(WrapFragment.ARG_IMAGE_ID,R.drawable.drink)
+                args.putString(WrapFragment.ARG_TEXT_ID, "Orange Lemonade, Strawberry Lemonade, Hibiscus Sorrel, Carrot Juice, Ginger Beer")
             }
 
         }//when
