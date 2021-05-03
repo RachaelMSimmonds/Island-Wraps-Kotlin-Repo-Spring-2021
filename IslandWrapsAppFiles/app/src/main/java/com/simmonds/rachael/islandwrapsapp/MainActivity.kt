@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        //navigation
         setSupportActionBar(binding.toolbar)
         val navController = Navigation.findNavController(this, R.id.nav_host_fragment)
 
@@ -27,6 +28,7 @@ class MainActivity : AppCompatActivity() {
         setupSideNavigationMenu(navController)
         setActionBar(navController)
     }
+
 
     private fun setupBottomNavMenu(navController: NavController) {
         binding.bottomNav?.let {

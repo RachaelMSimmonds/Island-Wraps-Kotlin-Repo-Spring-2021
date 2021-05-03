@@ -7,10 +7,16 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 
-class MenuFragment : Fragment() {
+import androidx.navigation.Navigation
+import com.simmonds.rachael.islandwrapsapp.databinding.FragmentWrapBinding
 
+class MenuFragment : Fragment() {
+  
     private var recyclerView : RecyclerView? = null
     private var layoutManager: RecyclerView.LayoutManager? = null
+
+    private var _binding: FragmentWrapBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

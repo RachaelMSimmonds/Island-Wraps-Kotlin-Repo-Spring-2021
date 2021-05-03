@@ -5,9 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.french.bryan.roomdemo.viewmodels.AllMenuItemsViewModel
+import com.simmonds.rachael.islandwrapsapp.viewmodels.AllMenuItemsViewModel
 import com.simmonds.rachael.islandwrapsapp.databinding.FragmentWrapBinding
-import com.simmonds.rachael.islandwrapsapp.entities.Invoice
+import com.simmonds.rachael.islandwrapsapp.entities.Items
 
 //private const val CUSTOMER_ID = "customerId"
 private const val ITEM_NAME = "itemName"
