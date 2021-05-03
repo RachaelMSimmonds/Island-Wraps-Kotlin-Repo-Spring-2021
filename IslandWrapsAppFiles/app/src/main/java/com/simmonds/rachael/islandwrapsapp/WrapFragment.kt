@@ -9,7 +9,7 @@ import com.simmonds.rachael.islandwrapsapp.databinding.FragmentWrapBinding
 
 class WrapFragment : Fragment() {
     private var _binding: FragmentWrapBinding? = null
-   // private val binding get() = _binding!!
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
