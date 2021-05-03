@@ -5,11 +5,26 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.french.bryan.roomdemo.viewmodels.AllMenuItemsViewModel
 import com.simmonds.rachael.islandwrapsapp.databinding.FragmentWrapBinding
+import com.simmonds.rachael.islandwrapsapp.entities.Invoice
+
+//private const val CUSTOMER_ID = "customerId"
+private const val ITEM_NAME = "itemName"
 
 class WrapFragment : Fragment() {
+
     private var _binding: FragmentWrapBinding? = null
-   // private val binding get() = _binding!!
+    private val binding get() = _binding!!
+
+    var mAdapter: MenuItemAdapter? = null
+    private var recyclerView : androidx.recyclerview.widget.RecyclerView? = null
+    private var layoutManager: androidx.recyclerview.widget.RecyclerView.LayoutManager? = null
+
+    //???
+    var menuItemViewModel : AllMenuItemsViewModel? = null
+
+    private var itemName: String = ""
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -24,50 +39,29 @@ class WrapFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_wrap, container, false)
     }
 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        arguments?.let {
+            //customerId = it.getLong(CUSTOMER_ID)
+            itemName = it.getString(ITEM_NAME,"")
+        }
+        menuItemViewModel = AllMenuItemsViewModel(activity?.application!!, itemName!!)
+
+        mAdapter = MenuItemAdapter(this,
+                mutableListOf<Invoice>())
+
+
+        menuItemViewModel!!.getAllItems().observe(this, Observer {
+            mAdapter!!.addAll(it ?: emptyList())
+        })
+
+    }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         //binding.itemImage.setImageResource(requireArguments().getInt(ARG_IMAGE_ID))
         //set bundle when we create frag
         //binding.itemName.text = requireArguments().getString(ARG_TEXT_ID)
     }
-
-    //function to show specific menu items
-//    fun showMenuItems(view: View) {
-//        val fragment = WrapFragment()
-//        val args = Bundle()
-//        when(view.id) {
-//            R.id.wraps -> {
-//                args.putInt(WrapFragment.ARG_IMAGE_ID,R.drawable.wraps)
-//                args.putString(WrapFragment.ARG_TEXT_ID, "Jerk Chicken, Barbecue Chicken, Grilled Chicken, Curry Chicken, Veggie")
-//            }
-//            R.id.plates -> {
-//                args.putInt(WrapFragment.ARG_IMAGE_ID,R.drawable.rubbish)
-//                args.putString(WrapFragment.ARG_TEXT_ID, "Jerk Chicken, Barbecue Chicken, Grilled Chicken, Curry Chicken, Veggie")
-//            }
-//            R.id.salads -> {
-//                args.putInt(WrapFragment.ARG_IMAGE_ID,R.drawable.salads)
-//                args.putString(WrapFragment.ARG_TEXT_ID, "Jerk Chicken, Barbecue Chicken, Grilled Chicken, Curry Chicken, Veggie")
-//            }
-//            R.id.dinner -> {
-//                args.putInt(WrapFragment.ARG_IMAGE_ID,R.drawable.dinner)
-//                args.putString(WrapFragment.ARG_TEXT_ID, "Jerk Chicken, Oxtail, Curry Goat, Fried Fish, Vegan")
-//            }
-//            R.id.specials -> {
-//                args.putInt(WrapFragment.ARG_IMAGE_ID,R.drawable.special)
-//                args.putString(WrapFragment.ARG_TEXT_ID, "1, 2, 3, 4, 5")
-//            }
-//            R.id.sides -> {
-//                args.putInt(WrapFragment.ARG_IMAGE_ID,R.drawable.side)
-//                args.putString(WrapFragment.ARG_TEXT_ID, "Fried Plantains, Fried Dumplings, Festivals, Garden Salad, Soup")
-//            }
-//            R.id.bevs -> {
-//                args.putInt(WrapFragment.ARG_IMAGE_ID,R.drawable.drink)
-//                args.putString(WrapFragment.ARG_TEXT_ID, "Orange Lemonade, Strawberry Lemonade, Hibiscus Sorrel, Carrot Juice, Ginger Beer")
-//            }
-//
-//        }//when
-//        fragment.arguments = args
-//        childFragmentManager.beginTransaction().replace(R.id.content,fragment).commit()
-//    }
 
     companion object {
         const val ARG_IMAGE_ID = "image_id"
