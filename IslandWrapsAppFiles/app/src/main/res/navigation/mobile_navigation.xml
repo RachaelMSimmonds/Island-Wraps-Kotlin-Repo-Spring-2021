@@ -42,7 +42,8 @@
             android:id="@+id/action_menuFragment_self"
             app:destination="@id/menuFragment" />
         <action
-            android:id="@+id/action_menuFragment_to_wrapFragment"
+
+            android:id="@+id/next_action"
             app:destination="@id/wrapFragment" />
     </fragment>
     
