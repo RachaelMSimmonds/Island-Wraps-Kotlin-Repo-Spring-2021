@@ -5,8 +5,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
 
 class MenuFragment : Fragment() {
+
+    private var recyclerView : RecyclerView? = null
+    private var layoutManager: RecyclerView.LayoutManager? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -16,4 +20,16 @@ class MenuFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_menu, container, false)
     }
 
+    //open the correct part of the menu using recyclerView
+    override fun onItemClicked(custId: Long, custName: String) {
+        //need to make changes to wrap fragment still
+        val fragment = WrapFragment.newInstance(custId,custName)
+        requireActivity().supportFragmentManager
+                .beginTransaction()
+                .setCustomAnimations(R.anim.design_bottom_sheet_slide_in, R.anim.design_bottom_sheet_slide_out)
+                .add(R.id.content, fragment, fragment.javaClass.getSimpleName())
+                .addToBackStack(fragment.javaClass.getSimpleName())
+                .commit()
+
+    }
 }
