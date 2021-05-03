@@ -5,10 +5,15 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
+
 import androidx.navigation.Navigation
 import com.simmonds.rachael.islandwrapsapp.databinding.FragmentWrapBinding
 
 class MenuFragment : Fragment() {
+  
+    private var recyclerView : RecyclerView? = null
+    private var layoutManager: RecyclerView.LayoutManager? = null
 
     private var _binding: FragmentWrapBinding? = null
     private val binding get() = _binding!!
@@ -21,20 +26,16 @@ class MenuFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_menu, container, false)
     }
 
-    //i think how to do the menu
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        binding.wraps.setOnClickListener {
-            //what is MenuFragmentDirections??
-            //val nextAction = MenuFragmentDirections.nextAction(
+    //open the correct part of the menu using recyclerView
+    override fun onItemClicked(custId: Long, custName: String) {
+        //need to make changes to wrap fragment still
+        val fragment = WrapFragment.newInstance(custId,custName)
+        requireActivity().supportFragmentManager
+                .beginTransaction()
+                .setCustomAnimations(R.anim.design_bottom_sheet_slide_in, R.anim.design_bottom_sheet_slide_out)
+                .add(R.id.content, fragment, fragment.javaClass.getSimpleName())
+                .addToBackStack(fragment.javaClass.getSimpleName())
+                .commit()
 
-            //)
-        }
-        //Navigation.findNavController(it).navigate(nextAction)
-    }
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
     }
 }
