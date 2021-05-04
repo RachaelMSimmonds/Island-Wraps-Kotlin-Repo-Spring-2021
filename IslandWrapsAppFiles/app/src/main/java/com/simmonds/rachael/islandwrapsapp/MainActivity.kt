@@ -28,6 +28,8 @@ class MainActivity : AppCompatActivity() {
         setupSideNavigationMenu(navController)
         setActionBar(navController)
 
+
+
     }
 
 
