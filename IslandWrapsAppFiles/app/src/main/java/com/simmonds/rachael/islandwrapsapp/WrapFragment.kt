@@ -22,7 +22,7 @@ class WrapFragment : Fragment() {
     private var layoutManager: androidx.recyclerview.widget.RecyclerView.LayoutManager? = null
 
     //???
-    var menuItemViewModel : AllMenuItemsViewModel? = null
+    //var menuItemViewModel : AllMenuItemsViewModel? = null
 
     private var itemName: String = ""
 
