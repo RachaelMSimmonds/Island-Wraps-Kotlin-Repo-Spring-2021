@@ -36,5 +36,54 @@
     <!-- Display Fragment -->
     <string name="itemImage">itemImage</string>
 
+    <!-- Menu Text -->
+    <string name="wrapsList">Jerk Chicken Wrap \n
+        Barbecue Chicken Wrap \n
+        Grilled Chicken Wrap \n
+        Curry Chicken Wrap \n
+        Veggie Wrap
+    </string>
+
+    <string name="rubbishList">Jerk Chicken Rubbish Plate \n
+        Barbecue Chicken Rubbish Plate \n
+        Grilled Chicken Rubbish Plate \n
+        Curry Chicken Rubbish Plate \n
+        Veggie Rubbish Plate \n
+    </string>
+
+    <string name="saladList">Jerk Chicken Salad \n
+        Barbecue Chicken Salad \n
+        Grilled Chicken Salad \n
+        Curry Chicken Salad \n
+        Vegetable Salad \n
+    </string>
+
+    <string name="dinnerList"> Jerk Chicken Dinner \n
+        Oxtail Dinner \n
+        Curry Goat Dinner \n
+        Fried Fish Dinner \n
+        Vegan Dinner \n
+    </string>
+
+    <string name="specialsList">Special 1 \n
+        Special 2 \n
+        Special 3 \n
+        Special 4 \n
+        Special 5 \n
+    </string>
+
+    <string name="sidesList"> Fried Plantains \n
+        Fried Dumplings \n
+        Festivals \n
+        Garden Salad \n
+        Soup \n
+    </string>
+
+    <string name="drinksList"> Orange Lemonade \n
+        Strawberry Lemonade \n
+        Hibiscus Sorrel \n
+        Carrot Juice \n
+        Ginger Beer \n
+    </string>
 
 </resources>
