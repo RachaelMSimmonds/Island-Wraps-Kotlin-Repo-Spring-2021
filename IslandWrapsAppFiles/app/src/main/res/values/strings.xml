@@ -37,53 +37,53 @@
     <string name="itemImage">itemImage</string>
 
     <!-- Menu Text -->
-    <string name="wrapsList">Jerk Chicken Wrap \n
-        Barbecue Chicken Wrap \n
-        Grilled Chicken Wrap \n
-        Curry Chicken Wrap \n
-        Veggie Wrap
+    <string name="wrapsList"> <br>Jerk Chicken Wrap</br>
+        <br>Barbecue Chicken Wrap</br>
+        <br>Grilled Chicken Wrap</br>
+        <br>Curry Chicken Wrap</br>
+        <br>Veggie Wrap</br>
     </string>
 
-    <string name="rubbishList">Jerk Chicken Rubbish Plate \n
-        Barbecue Chicken Rubbish Plate \n
-        Grilled Chicken Rubbish Plate \n
-        Curry Chicken Rubbish Plate \n
-        Veggie Rubbish Plate \n
+    <string name="rubbishList"> <br>Jerk Chicken Rubbish Plate</br>
+        <br>Barbecue Chicken Rubbish Plate</br>
+        <br>Grilled Chicken Rubbish Plate</br>
+        <br>Curry Chicken Rubbish Plate</br>
+       <br>Veggie Rubbish Plate</br>
     </string>
 
-    <string name="saladList">Jerk Chicken Salad \n
-        Barbecue Chicken Salad \n
-        Grilled Chicken Salad \n
-        Curry Chicken Salad \n
-        Vegetable Salad \n
+    <string name="saladList"> <br>Jerk Chicken Salad</br>
+        <br>Barbecue Chicken Salad</br>
+        <br>Grilled Chicken Salad</br>
+        <br>Curry Chicken Salad</br>
+        <br>Vegetable Salad</br>
     </string>
 
-    <string name="dinnerList"> Jerk Chicken Dinner \n
-        Oxtail Dinner \n
-        Curry Goat Dinner \n
-        Fried Fish Dinner \n
-        Vegan Dinner \n
+    <string name="dinnerList"> <br>Jerk Chicken Dinner</br>
+        <br>Oxtail Dinner</br>
+        <br>Curry Goat Dinner</br>
+        <br>Fried Fish Dinner</br>
+        <br>Vegan Dinner</br>
     </string>
 
-    <string name="specialsList">Special 1 \n
-        Special 2 \n
-        Special 3 \n
-        Special 4 \n
-        Special 5 \n
+    <string name="specialsList"> <br>Special 1</br>
+        <br>Special 2</br>
+        <br>Special 3</br>
+        <br>Special 4</br>
+        <br>Special 5</br>
     </string>
 
-    <string name="sidesList"> Fried Plantains \n
-        Fried Dumplings \n
-        Festivals \n
-        Garden Salad \n
-        Soup \n
+    <string name="sidesList"> <br>Fried Plantains</br>
+        <br>Fried Dumplings</br>
+        <br>Festivals</br>
+        <br>Garden Salad</br>
+        <br>Soup</br>
     </string>
 
-    <string name="drinksList"> Orange Lemonade \n
-        Strawberry Lemonade \n
-        Hibiscus Sorrel \n
-        Carrot Juice \n
-        Ginger Beer \n
+    <string name="drinksList"> <br>Orange Lemonade</br>
+        <br>Strawberry Lemonade</br>
+        <br>Hibiscus Sorrel</br>
+        <br>Carrot Juice</br>
+        <br>Ginger Beer</br>
     </string>
 
 </resources>
