@@ -2,7 +2,6 @@ package com.simmonds.rachael.islandwrapsapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.simmonds.rachael.islandwrapsapp.databinding.ActivityMainBinding
 import com.simmonds.rachael.islandwrapsapp.databinding.ActivityWrapBinding
 
 class WrapActivity : AppCompatActivity() {
