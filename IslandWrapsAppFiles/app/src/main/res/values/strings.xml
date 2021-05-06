@@ -37,53 +37,53 @@
     <string name="itemImage">itemImage</string>
 
     <!-- Menu Text -->
-    <string name="wrapsList"> <br>Jerk Chicken Wrap</br>
-        <br>Barbecue Chicken Wrap</br>
-        <br>Grilled Chicken Wrap</br>
-        <br>Curry Chicken Wrap</br>
-        <br>Veggie Wrap</br>
+    <string name="wrapsList"> Jerk Chicken Wrap
+        \nBarbecue Chicken Wrap
+        \nGrilled Chicken Wrap
+        \nCurry Chicken Wrap
+        \nVeggie Wrap
     </string>
 
-    <string name="rubbishList"> <br>Jerk Chicken Rubbish Plate</br>
-        <br>Barbecue Chicken Rubbish Plate</br>
-        <br>Grilled Chicken Rubbish Plate</br>
-        <br>Curry Chicken Rubbish Plate</br>
-       <br>Veggie Rubbish Plate</br>
+    <string name="rubbishList"> Jerk Chicken Rubbish Plate
+        \nBarbecue Chicken Rubbish Plate
+        \nGrilled Chicken Rubbish Plate
+        \nCurry Chicken Rubbish Plate
+        \nVeggie Rubbish Plate
     </string>
 
-    <string name="saladList"> <br>Jerk Chicken Salad</br>
-        <br>Barbecue Chicken Salad</br>
-        <br>Grilled Chicken Salad</br>
-        <br>Curry Chicken Salad</br>
-        <br>Vegetable Salad</br>
+    <string name="saladList"> Jerk Chicken Salad
+        \nBarbecue Chicken Salad
+        \nGrilled Chicken Salad
+        \nCurry Chicken Salad
+        \nVegetable Salad
     </string>
 
-    <string name="dinnerList"> <br>Jerk Chicken Dinner</br>
-        <br>Oxtail Dinner</br>
-        <br>Curry Goat Dinner</br>
-        <br>Fried Fish Dinner</br>
-        <br>Vegan Dinner</br>
+    <string name="dinnerList"> Jerk Chicken Dinner
+        \nOxtail Dinner
+        \nCurry Goat Dinner
+        \nFried Fish Dinner
+        \nVegan Dinner
     </string>
 
-    <string name="specialsList"> <br>Special 1</br>
-        <br>Special 2</br>
-        <br>Special 3</br>
-        <br>Special 4</br>
-        <br>Special 5</br>
+    <string name="specialsList"> Special 1
+        \nSpecial 2
+        \nSpecial 3
+        \nSpecial 4
+        \nSpecial 5
     </string>
 
-    <string name="sidesList"> <br>Fried Plantains</br>
-        <br>Fried Dumplings</br>
-        <br>Festivals</br>
-        <br>Garden Salad</br>
-        <br>Soup</br>
+    <string name="sidesList"> Fried Plantains
+        \nFried Dumplings
+        \nFestivals
+        \nGarden Salad
+        \nSoup
     </string>
 
-    <string name="drinksList"> <br>Orange Lemonade</br>
-        <br>Strawberry Lemonade</br>
-        <br>Hibiscus Sorrel</br>
-        <br>Carrot Juice</br>
-        <br>Ginger Beer</br>
+    <string name="drinksList"> Orange Lemonade
+        \nStrawberry Lemonade
+        \nHibiscus Sorrel
+        \nCarrot Juice
+        \nGinger Beer
     </string>
 
 </resources>
