@@ -12,9 +12,6 @@ import androidx.navigation.Navigation
 import com.simmonds.rachael.islandwrapsapp.databinding.FragmentMenuBinding
 
 class MenuFragment : Fragment() {
-  
-    //private var recyclerView : RecyclerView? = null
-    //private var layoutManager: RecyclerView.LayoutManager? = null
 
     private var _binding: FragmentMenuBinding? = null
     private val binding get() = _binding!!
@@ -26,41 +23,44 @@ class MenuFragment : Fragment() {
         // Inflate the layout for this fragment
         _binding = FragmentMenuBinding.inflate(inflater, container, false)
 
+        //when item categories are clicked, specific menu activities appear
         binding.wraps.setOnClickListener {
             val intent = Intent(activity, WrapActivity::class.java)
             activity?.startActivity(intent)
         }
+
+        binding.plates.setOnClickListener {
+            val intent = Intent(activity, PlateActivity::class.java)
+            activity?.startActivity(intent)
+        }
+
+        binding.salads.setOnClickListener {
+            val intent = Intent(activity, SaladActivity::class.java)
+            activity?.startActivity(intent)
+        }
+
+        binding.dinner.setOnClickListener {
+            val intent = Intent(activity, DinnerActivity::class.java)
+            activity?.startActivity(intent)
+        }
+
+        binding.specials.setOnClickListener {
+            val intent = Intent(activity, SpecialActivity::class.java)
+            activity?.startActivity(intent)
+        }
+
+        binding.sides.setOnClickListener {
+            val intent = Intent(activity, SideActivity::class.java)
+            activity?.startActivity(intent)
+        }
+
+        binding.bevs.setOnClickListener {
+            val intent = Intent(activity, BeverageActivity::class.java)
+            activity?.startActivity(intent)
+        }
         return binding.root
-        //return inflater.inflate(R.layout.fragment_menu, container, false)
 
     }
-
-//    override fun onCreate(savedInstanceState: Bundle?) {
-//        super.onCreate(savedInstanceState)
-//        setContentView(R.layout.fragment_menu)
-//
-//        //menu items clickable
-//        val wraps = findViewById<Button>(R.id.wraps)
-//
-//        binding.wraps.setOnClickListener {
-//            val intent = Intent(activity, WrapFragment::class.java)
-//            activity?.startActivity(intent)
-//        }
-//    }
-
-
-    //open the correct part of the menu using recyclerView
-//    override fun onItemClicked(custId: Long, custName: String) {
-//        //need to make changes to wrap fragment still
-//        val fragment = WrapFragment.newInstance(custId,custName)
-//        requireActivity().supportFragmentManager
-//                .beginTransaction()
-//                .setCustomAnimations(R.anim.design_bottom_sheet_slide_in, R.anim.design_bottom_sheet_slide_out)
-//                .add(R.id.content, fragment, fragment.javaClass.getSimpleName())
-//                .addToBackStack(fragment.javaClass.getSimpleName())
-//                .commit()
-//
-//    }
 
     override fun onDestroyView() {
         super.onDestroyView()
