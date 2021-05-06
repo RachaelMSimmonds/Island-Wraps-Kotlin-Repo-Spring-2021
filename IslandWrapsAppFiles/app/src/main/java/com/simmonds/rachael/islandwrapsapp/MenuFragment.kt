@@ -27,7 +27,7 @@ class MenuFragment : Fragment() {
         _binding = FragmentMenuBinding.inflate(inflater, container, false)
 
         binding.wraps.setOnClickListener {
-            val intent = Intent(activity, WrapFragment::class.java)
+            val intent = Intent(activity, WrapActivity::class.java)
             activity?.startActivity(intent)
         }
         return binding.root
