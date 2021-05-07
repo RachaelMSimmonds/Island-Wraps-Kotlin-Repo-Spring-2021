@@ -2,14 +2,14 @@ package com.simmonds.rachael.islandwrapsapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.simmonds.rachael.islandwrapsapp.databinding.ActivityWrapBinding
+import com.simmonds.rachael.islandwrapsapp.databinding.ActivityPlateBinding
 
-class WrapActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityWrapBinding
+class PlateActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityPlateBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityWrapBinding.inflate(layoutInflater)
+        binding = ActivityPlateBinding.inflate(layoutInflater)
         setContentView(binding.root)
     }
 }

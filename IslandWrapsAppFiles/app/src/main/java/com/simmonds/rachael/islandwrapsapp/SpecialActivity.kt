@@ -2,14 +2,15 @@ package com.simmonds.rachael.islandwrapsapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.simmonds.rachael.islandwrapsapp.databinding.ActivityWrapBinding
+import com.simmonds.rachael.islandwrapsapp.databinding.ActivitySpecialBinding
 
-class WrapActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityWrapBinding
+
+class SpecialActivity : AppCompatActivity() {
+    private lateinit var binding: ActivitySpecialBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityWrapBinding.inflate(layoutInflater)
+        binding = ActivitySpecialBinding.inflate(layoutInflater)
         setContentView(binding.root)
     }
 }

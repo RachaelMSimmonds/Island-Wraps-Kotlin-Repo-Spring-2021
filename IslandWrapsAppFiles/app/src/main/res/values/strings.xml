@@ -36,5 +36,54 @@
     <!-- Display Fragment -->
     <string name="itemImage">itemImage</string>
 
+    <!-- Menu Text -->
+    <string name="wrapsList"> <br>Jerk Chicken Wrap</br>
+        <br>Barbecue Chicken Wrap</br>
+        <br>Grilled Chicken Wrap</br>
+        <br>Curry Chicken Wrap</br>
+        <br>Veggie Wrap</br>
+    </string>
+
+    <string name="rubbishList"> <br>Jerk Chicken Rubbish Plate</br>
+        <br>Barbecue Chicken Rubbish Plate</br>
+        <br>Grilled Chicken Rubbish Plate</br>
+        <br>Curry Chicken Rubbish Plate</br>
+       <br>Veggie Rubbish Plate</br>
+    </string>
+
+    <string name="saladList"> <br>Jerk Chicken Salad</br>
+        <br>Barbecue Chicken Salad</br>
+        <br>Grilled Chicken Salad</br>
+        <br>Curry Chicken Salad</br>
+        <br>Vegetable Salad</br>
+    </string>
+
+    <string name="dinnerList"> <br>Jerk Chicken Dinner</br>
+        <br>Oxtail Dinner</br>
+        <br>Curry Goat Dinner</br>
+        <br>Fried Fish Dinner</br>
+        <br>Vegan Dinner</br>
+    </string>
+
+    <string name="specialsList"> <br>Special 1</br>
+        <br>Special 2</br>
+        <br>Special 3</br>
+        <br>Special 4</br>
+        <br>Special 5</br>
+    </string>
+
+    <string name="sidesList"> <br>Fried Plantains</br>
+        <br>Fried Dumplings</br>
+        <br>Festivals</br>
+        <br>Garden Salad</br>
+        <br>Soup</br>
+    </string>
+
+    <string name="drinksList"> <br>Orange Lemonade</br>
+        <br>Strawberry Lemonade</br>
+        <br>Hibiscus Sorrel</br>
+        <br>Carrot Juice</br>
+        <br>Ginger Beer</br>
+    </string>
 
 </resources>
