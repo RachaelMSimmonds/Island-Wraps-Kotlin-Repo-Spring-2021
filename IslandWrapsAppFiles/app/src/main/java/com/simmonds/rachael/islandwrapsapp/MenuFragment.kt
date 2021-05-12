@@ -23,11 +23,20 @@ class MenuFragment : Fragment() {
         // Inflate the layout for this fragment
         _binding = FragmentMenuBinding.inflate(inflater, container, false)
 
+<<<<<<< HEAD
+//        binding.wraps.setOnClickListener {
+//            val intent = Intent(activity, WrapFragment::class.java)
+//            activity?.startActivity(intent)
+//        }
+        return binding.root
+        //return inflater.inflate(R.layout.fragment_menu, container, false)
+=======
         //when item categories are clicked, specific menu activities appear
         binding.wraps.setOnClickListener {
             val intent = Intent(activity, WrapActivity::class.java)
             activity?.startActivity(intent)
         }
+>>>>>>> ab7a115835329bccc9062d4014b3660bcf95d328
 
         binding.plates.setOnClickListener {
             val intent = Intent(activity, PlateActivity::class.java)

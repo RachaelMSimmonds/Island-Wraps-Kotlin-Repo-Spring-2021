@@ -21,6 +21,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:name="androidx.navigation.fragment.NavHostFragment"
+        android:background="@color/black"
         app:navGraph="@navigation/mobile_navigation"
         app:defaultNavHost="true" />
 
