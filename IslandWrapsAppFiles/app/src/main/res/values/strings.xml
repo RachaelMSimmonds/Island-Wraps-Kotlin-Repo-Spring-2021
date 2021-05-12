@@ -32,9 +32,14 @@
     <string name="twitter">Twitter</string>
     <string name="instagram">Instagram</string>
     <string name="facebook">Facebook</string>
+    <string name="date_of_event_address_website_etc">Date of event, Address, website etc.</string>
+    <string name="event_1_the_lilac_festival">Event 1: The Lilac Festival</string>
+    <string name="event_2_fairport_canal_days">Event 2: Fairport Canal Days</string>
+    <string name="event_3_rochester_jazz_festival">Event 3: Rochester Jazz Festival</string>
+    <string name="event_4_lewiston_pumkin_festival">Event 4: Lewiston Pumkin Festival</string>
+    <string name="event_5_lewiston_garden_festival">Event 5: Lewiston Garden Festival</string>
 
-    <!-- Display Fragment -->
-    <string name="itemImage">itemImage</string>
+    <string name="upcoming_events">Upcoming Events:</string>
 
 
 </resources>

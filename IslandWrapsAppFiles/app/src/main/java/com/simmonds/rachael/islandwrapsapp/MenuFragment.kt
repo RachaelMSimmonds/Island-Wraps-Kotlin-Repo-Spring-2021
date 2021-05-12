@@ -26,10 +26,10 @@ class MenuFragment : Fragment() {
         // Inflate the layout for this fragment
         _binding = FragmentMenuBinding.inflate(inflater, container, false)
 
-        binding.wraps.setOnClickListener {
-            val intent = Intent(activity, WrapFragment::class.java)
-            activity?.startActivity(intent)
-        }
+//        binding.wraps.setOnClickListener {
+//            val intent = Intent(activity, WrapFragment::class.java)
+//            activity?.startActivity(intent)
+//        }
         return binding.root
         //return inflater.inflate(R.layout.fragment_menu, container, false)
 
